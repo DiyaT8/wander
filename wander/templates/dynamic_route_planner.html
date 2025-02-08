@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Route Planner - WanderWise</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/dynamic_route_planner.css">
+    <script defer src="../static/js/dynamic_route_planner.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">WanderWise</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personalized_recommendation.html">Personalized Recommendations</a></li>
+            <li><a href="real_time_popularity.html">Real-Time Popularity</a></li>
+            <li><a href="sentiment_analysis.html">Sentiment Analysis</a></li>
+            <li><a href="dynamic_route_planner.html">Dynamic Route Planner</a></li>
+        </ul>
+        <button class="login-btn">Login</button>
+    </nav>
+
+    <!-- Background Section -->
+    <div class="route-planner-bg">
+        <div class="route-planner-container">
+            <h2>Plan Your Best Route</h2>
+            <p>Enter your start and destination to find the best route.</p>
+
+            <!-- Form for Route Planning -->
+            <form id="route-form">
+                <label for="start-location">Starting Location:</label>
+                <input type="text" id="start-location" placeholder="Enter Starting Location">
+
+                <label for="end-location">Destination:</label>
+                <input type="text" id="end-location" placeholder="Enter Destination">
+
+                <button type="submit">Get Route</button>
+            </form>
+
+            <!-- Map Display -->
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 WanderWise. All Rights Reserved.</p>
+        <p>Contact Us: wanderwise@example.com</p>
+    </footer>
+</body>
+</html>

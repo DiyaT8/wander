@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Popularity - WanderWise</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/real_time_popularity.css">
+    <script defer src="../static/js/real_time_popularity.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">WanderWise</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personalized_recommendation.html">Personalized Recommendations</a></li>
+            <li><a href="real_time_popularity.html">Real-Time Popularity</a></li>
+            <li><a href="sentiment_analysis.html">Sentiment Analysis</a></li>
+            <li><a href="dynamic_route_planner.html">Dynamic Route Planner</a></li>
+        </ul>
+        <button class="login-btn">Login</button>
+    </nav>
+
+    <!-- Background Section -->
+    <div class="popularity-bg">
+        <div class="popularity-container">
+            <h2>Check Real-Time Popularity</h2>
+            <p>See how busy different places are right now.</p>
+
+            <!-- Form for User Selection -->
+            <form id="popularity-form">
+                <label for="pop-location">Location:</label>
+                <input type="text" id="pop-location" placeholder="Enter City or Area">
+
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="">Select Category</option>
+                    <option value="restaurant">Restaurants</option>
+                    <option value="cafe">Cafes</option>
+                    <option value="mall">Malls</option>
+                    <option value="theater">Theaters</option>
+                    <option value="park">Parks</option>
+                </select>
+
+                <button type="submit">Check Popularity</button>
+            </form>
+
+            <!-- Results Section -->
+            <div id="popularity-results">
+                <h3>Real-Time Popularity Trends</h3>
+                <ul id="popularity-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 WanderWise. All Rights Reserved.</p>
+        <p>Contact Us: wanderwise@example.com</p>
+    </footer>
+</body>
+</html>

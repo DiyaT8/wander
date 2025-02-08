@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis - WanderWise</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/sentiment_analysis.css">
+    <script defer src="../static/js/sentiment_analysis.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">WanderWise</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personalized_recommendation.html">Personalized Recommendations</a></li>
+            <li><a href="real_time_popularity.html">Real-Time Popularity</a></li>
+            <li><a href="sentiment_analysis.html">Sentiment Analysis</a></li>
+            <li><a href="dynamic_route_planner.html">Dynamic Route Planner</a></li>
+        </ul>
+        <button class="login-btn">Login</button>
+    </nav>
+
+    <!-- Background Section -->
+    <div class="sentiment-bg">
+        <div class="sentiment-container">
+            <h2>Analyze Sentiments</h2>
+            <p>Enter a place name to see what people think about it.</p>
+
+            <!-- Form for User Input -->
+            <form id="sentiment-form">
+                <label for="place-name">Place Name:</label>
+                <input type="text" id="place-name" placeholder="Enter Restaurant, Cafe, etc.">
+
+                <button type="submit">Analyze Sentiment</button>
+            </form>
+
+            <!-- Results Section -->
+            <div id="sentiment-results">
+                <h3>Sentiment Analysis Result</h3>
+                <p id="sentiment-output">Enter a place name to analyze its sentiment.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 WanderWise. All Rights Reserved.</p>
+        <p>Contact Us: wanderwise@example.com</p>
+    </footer>
+</body>
+</html>
